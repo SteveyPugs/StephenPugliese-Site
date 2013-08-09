@@ -1,4 +1,3 @@
 StephenPugliese-Site
 ====================
-
-www.stephenpugliese.com website
+This repository contains the code for www.stephenpugliese.com
