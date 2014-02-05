@@ -1,92 +1,37 @@
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<title>StephenPugliese.com</title>
-		<link rel="stylesheet" href="/css/foundation.css">
-		<script src="/js/vendor/custom.modernizr.js"></script>
-	</head>
-<body>
-	<div class="row">
-		<div class="large-12 columns"><h4>StephenPugliese.com</h4></div>
+{{>header}}
+<div class="row">
+	<div class="large-12 columns">&nbsp;</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<h1 class="text-center"><b>Portfolio</b></h1>
 	</div>
-	<div class="row">
-		<div class="large-12 columns">
-			<div class="panel">
-				<h6>Languages</h6>
-				<p>HTML, CSS, Javascript, jQuery, PHP, ASP, SQL, MySQL, JSON, XML, Objective C, AJAX, Node, Bash Scripting (Basic Knowledge), Git</p>
-				<h6>Tools</h6>
-				<p>Coderunner, Dreamweaver, Sublime Text, Text Wrangler, Notepad++, MySQL Workbench, SQL Server Mgmt. Studio, GitHub, VSS</p>
-				<h6>Frameworks</h6>
-				<p>Node Package Manager, Handlebars.js, Foundation, Async</p>
-				<h6>Projects</h6>
-				<ul class="no-bullet">
-					<li>EndOfLne.com - Personal Blog</li>
-					<li>SeeYouAt300.com - Inspiration Website</li>
-					<li>Tip Calculator $$$ (iOS Native Applications)</li>
-					<li>The Alternate Side (iOS Native Applications)</li>
-				</ul>
-	 			<h6>Education</h6>
-	 			<p>B.S. & M.S. Computer Information Systems (2007 & 2012) – Long Island University</p>
-	 			<h6>Professional Experience</h6>
-	 			<p>
-	 			<i>Alternate Side NYC (Creator - Designer)</i>
-	 			<br>
-	 			http://www.alternatesidenyc.com - http://api.alternatesidenyc.com
-	 			<br>
-	 			- Node.js Backend
-	 			<br>
-				- Dedicated Limited API
-	 			</p>
-	 			<p>
-	 			<i>Acupay/BondCom – NY, NY (Senior Engineer)<br>July 2011 – Present</i>
-	 			<br>
-	 			- Developed iOS Web Application (LM Dashboard) for the Greek Debt Restructuring
-	 			<br>
-				- Develop/Maintain Intranet Systems
-				<br>
-				- Develop custom websites/portals for bond id’s/exchanges/swaps
-	 			</p>
-	 			<p>
-	 			<i>IMM Interactive – Woodbury, NY (Junior Developer)<br>November 2009 – July 2011</i>
-	 			<br>
-	 			- Developed SocialSteal.com w/ Facebook and Twitter Integration
-	 			<br>
-				- Maintained and Developed MS SQL Servers for various company projects
-				<br>
-				- Oversaw successful data migration from DirectTrack to eMediaTrack
-				<br>
-				- Employee of the Quarter – 4th Quarter 2010
-	 			</p>
-			</div>
-		</div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><h4><u>{{repos.[0].AltSideNYC.siteName}}</u></h4><a class="th" target="_blank" href="//www.alternatesidenyc.com/"><img src="/img/ALT.png"></a></div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><br>Latest Commit - {{repos.[0].AltSideNYC.lastCommitDate}} || <a target="_blank" href="{{repos.[0].AltSideNYC.lastCommitURL}}">{{repos.[0].AltSideNYC.lastCommitURL}}</a><br><br><br><br></div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><h4><u>{{repos.[1].AltSideNYCAPI.siteName}}</u></h4><a class="th" target="_blank" href="//api.alternatesidenyc.com/"><img src="/img/APIALT.png"></a></div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><br>Latest Commit - {{repos.[1].AltSideNYCAPI.lastCommitDate}} || <a target="_blank" href="{{repos.[1].AltSideNYCAPI.lastCommitURL}}">{{repos.[1].AltSideNYCAPI.lastCommitURL}}</a><br><br><br><br></div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><h4><u>{{repos.[2].Blog.siteName}}</u></h4><a class="th" target="_blank" href="//www.endoflne.com/"><img src="/img/EOL.png"></a></div>
+</div>
+<div class="row">
+	<div class="large-12 columns"><br>Latest Commit - {{repos.[2].Blog.lastCommitDate}} || <a target="_blank" href="{{repos.[2].Blog.lastCommitURL}}">{{repos.[2].Blog.lastCommitURL}}</a><br><br><br><br></div>
+</div>
+<div class="row">
+	<div class="large-12 columns text-center">
+		<ul class="vcard">
+		<li class="fn">Stephen Pugliese</li>
+		<li class="locality">Flushing, NY</li>
+		<li class="email"><a href="mailto:stephen.pugliese@outlook.com">stephen.pugliese@outlook.com</a></li>
+		</ul>
 	</div>
-	<script>
-	document.write('<script src=' +
-	('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-	'.js><\/script>')
-	</script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/foundation/foundation.js"></script>
-	<script src="js/foundation/foundation.interchange.js"></script>
-	<script src="js/foundation/foundation.abide.js"></script>
-	<script src="js/foundation/foundation.dropdown.js"></script>
-	<script src="js/foundation/foundation.placeholder.js"></script>
-	<script src="js/foundation/foundation.forms.js"></script>
-	<script src="js/foundation/foundation.alerts.js"></script>
-	<script src="js/foundation/foundation.magellan.js"></script>
-	<script src="js/foundation/foundation.reveal.js"></script>
-	<script src="js/foundation/foundation.tooltips.js"></script>
-	<script src="js/foundation/foundation.clearing.js"></script>
-	<script src="js/foundation/foundation.cookie.js"></script>
-	<script src="js/foundation/foundation.joyride.js"></script>
-	<script src="js/foundation/foundation.orbit.js"></script>
-	<script src="js/foundation/foundation.section.js"></script>
-	<script src="js/foundation/foundation.topbar.js"></script>
-	<script>
-	$(document).foundation();
-	</script>
-</body>
-</html>
+</div>
+{{>footer}}
