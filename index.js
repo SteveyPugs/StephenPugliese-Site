@@ -23,7 +23,6 @@ server.views({
 	},
 	path: "./views"
 });
-
 server.route([
 	{
 		method: "GET",
@@ -74,39 +73,7 @@ server.route([
 			}
 		}
 	}
-])
-
+]);
 server.start(function(){
 	console.log("Server running at:", server.info.uri);
 });
-
-server.on('request-error', function (request, err) {
-    console.log('Error response (500) sent for request: ' + request.id + ' because: ' + err.message);
-});
-
-
-
-//     pageDate = new Object;
-//     pageDate["title"] = "Home";
-//             requestN({'method': 'GET', 'uri': '', headers: {'User-Agent': 'request'}, 'auth':  } }, function(error, response, body) {
-//                 if (!error && response.statusCode == 200) {
-//                   
-//                     callbackAltSide(null, gitHubObject);
-//                 }
-//             })
-
-//             requestN({'method': 'GET', 'uri': 'https://api.github.com/repos/steveypugs/stephenpugliese-blog/commits',  }, function(error, response, body) {
-//                 if (!error && response.statusCode == 200) {
-//                     var githubResponse = JSON.parse(body)
-//                     var gitHubObject = new Object
-//                     gitHubObject["Blog"] = new Object
-//                     gitHubObject["Blog"]["siteName"] = ""
-//                     gitHubObject["Blog"]["lastCommitDate"] = moment(githubResponse[0].commit.author.date).format('MMMM Do YYYY');
-//                     gitHubObject["Blog"]["lastCommitURL"] = githubResponse[0].html_url
-//                     callbackBlog(null, gitHubObject);
-//                 }
-//             })
-//     function(err, results){
-//         pageDate["repos"] = results;
-//         reply.view('index', pageDate)
-//     });
