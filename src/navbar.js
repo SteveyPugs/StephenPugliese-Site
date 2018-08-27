@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import resume from './';
-
 
 class NavBar extends Component {
 	render() {
